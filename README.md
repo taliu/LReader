@@ -3,7 +3,7 @@
 
 # LReader使用
 
-命令格式：
+## 命令格式：
 > head [OPTION]  FILE
 功能：输出指定文件的前部分. 如果没有使用参数选项OPTION,默认输出指定文件前10行到控制台
 
@@ -13,10 +13,10 @@
 > find [OPTION]  FILE
 功能：输出与关键字 或 正则表达式 匹配的行
 
-参数说明：
-FILE:
+## 参数说明：
+###FILE:
 指定的文件名称
-OPTION:
+###OPTION:
 -n, --lines
  一个整数，  输出指定文件中的n行
 -o, --output 
@@ -34,7 +34,8 @@ OPTION:
 -t,--tail
  为开关参数，表示查找时，从文件末尾向开始向上查找。如果不使用该参数，默认从文件头部开始向下查找。
 
-例子:
+##例子:
+
 1)输出文件filename.txt的前5行  
    head -n 5  filename.txt  
 2)输出文件filename.txt的前5行到myOutput.txt中
