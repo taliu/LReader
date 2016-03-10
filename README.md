@@ -11,7 +11,7 @@
 >tail [OPTION]  FILE
 功能：输出指定文件的后部分.  如果没有使用参数选项OPTION,默认输出指定文件最后后10行到控制台
 
->find [OPTION]  FILE`
+>find [OPTION]  FILE
 功能：输出与关键字 或 正则表达式 匹配的行
 ```
 
@@ -74,10 +74,10 @@ tail -n 5  filename.txt -c gb2312
 ```
 6)从文件头部开始向下查找匹配正则表达式 \d+ 的前10行
 ```
-   find -n 10 -r ""\d+""   filename.txt
+   find -n 10 -r "\d+"   filename.txt
 ```
    
 7)从文件头部开始向下查找忽略大小写匹配正则表达式 \d+ 的前10行
 ```
-   find -i -n 10 -r ""\d+""   filename.txt
+   find -i -n 10 -r "\d+"  filename.txt
 ```
