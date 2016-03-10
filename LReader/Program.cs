@@ -8,11 +8,6 @@ namespace LReader
     {
         static void Main(string[] args)
         {
-           // var reader = new Reader(@"D:\github\aspnet\LReader\LReader\bin\Release\java.txt",null,"utf-8");
-            //reader.PrintMatch("Plugin", null, true, false, 0);
-            //reader.PrintMatch("Plugin", null, false, false, 0);
-          //  reader.PrintMatch("Plugin", @"-\w+-", true, false, 0);
-         //   return;
             try
             {
                 Run(args);
@@ -36,7 +31,7 @@ namespace LReader
                     {
                         Console.Write("\r\n>");
                         string argLine = Console.ReadLine();
-                        argLine = argLine.Trim().ToLower();
+                        argLine = argLine.Trim();
                         if (argLine == "exit")
                         {
                             return;

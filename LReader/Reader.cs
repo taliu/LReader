@@ -102,6 +102,7 @@ namespace LReader
                     }
                     else//keyword
                     {
+                        keyword = ignoreCase ? keyword.ToLower() : keyword;
                         while (count < num)
                         {
                             var line = sr.ReadLine();
@@ -157,6 +158,7 @@ namespace LReader
                         }
                         else//keyword
                         {
+                            keyword = ignoreCase ? keyword.ToLower() : keyword;
                             var str = ignoreCase ? line.ToLower() : line;
                             if (str.Contains(keyword))
                             {
